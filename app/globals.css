@@ -3,21 +3,36 @@
 :root {
   --background: #f1f1f1;
   --foreground: #171717;
-  --textColor: #e60e0e;
+  /* Text Colors */
+  --text-white: #f1f1f1;
+  --text-black: #171717;
+  /* Color Palette */
+  --bubblegum_pink: #f45b69;
+  --lavender_blush: #f6e8ea;
+  --coffee_bean: #22181c;
+  --black_cherry: #5a0001;
+  --cinnabar: #f13030;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-red: var(--textColor);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --text-white: var(--text-white);
+  --text-black: var(--text-black);
+  /* Color Palette */
+  --color-bubblegum_pink: var(--bubblegum_pink);
+  --color-lavender_blush: var(--lavender_blush);
+  --color-coffee_bean: var(--coffee_bean);
+  --color-black_cherry: var(--black_cherry);
+  --color-cinnabar: var(--cinnabar);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    /* --background: #0a0a0a; */
-    /* --foreground: #ededed; */
+    --background: #171717;
+    --foreground: #ededed;
   }
 }
 
