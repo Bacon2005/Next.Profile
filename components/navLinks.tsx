@@ -28,12 +28,12 @@ export default function NavLink({
       <Link
         href={href}
         className={`relative
-                   after:content-[''] after:absolute after:left-1/2 after:-bottom-1
-                   after:h-0.5 after:w-full after:bg-current
-                   after:origin-center after:transition-transform after:duration-300
-                   after:-translate-x-1/2
-                   hover:after:scale-x-100
-                   ${isActive ? "after:scale-x-100" : "after:scale-x-0"}`}
+                  after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+                  after:h-0.5 after:w-full after:bg-current
+                  after:origin-center after:transition-transform after:duration-300
+                  after:-translate-x-1/2
+                  hover:after:scale-x-100
+                  ${isActive ? "after:scale-x-100" : "after:scale-x-0"}`}
       >
         {children}
       </Link>

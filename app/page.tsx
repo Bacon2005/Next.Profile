@@ -1,36 +1,12 @@
-import Image from "next/image";
-import {} from "next/font/google";
-import NavLink from "@/components/navLinks";
+//Components
+import NavBar from "@/components/navBar";
+import SocialLink from "@/components/socialLink";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans bg-background">
       {/* Navigation Bar */}
-      <div className="flex flex-row items-center justify-between w-full mt-5 px-8 py-0">
-        <div>
-          <h1 className="text-1xl">
-            Tyrone
-            <br /> Niere
-          </h1>
-        </div>
-        <div>
-          {/* Add areas to navigate to */}
-          <ul className="flex flex-row gap-20 text-lg">
-            <NavLink href="">About</NavLink>
-            <NavLink href="">Projects</NavLink>
-            <NavLink href="">Contact</NavLink>
-          </ul>
-        </div>
-        <div className="profile">
-          <Image
-            src="/assets/Ty_White.png"
-            alt="Ty Logo"
-            width={50}
-            height={50}
-            className="rounded-full"
-          />
-        </div>
-      </div>
+      {/* <NavBar /> */}
 
       {/* Design */}
       <div className="grid grid-cols-2 grid-rows-1 gap-40 mt-24">
@@ -53,54 +29,21 @@ export default function Home() {
 
           {/* TODO: Simplify it so that you dont have to copy paste it everytime */}
           <div className="flex flex-row justify-between mt-6">
-            <a
+            <SocialLink
               href="https://github.com/"
-              className="group flex items-center gap-2 rounded-full border px-5 py-2
-              transition-all duration-300
-            hover:bg-black hover:text-white hover:scale-[1.03] hover:shadow-md
-            dark:hover:bg-white dark:hover:text-black"
-            >
-              <Image
-                src="/assets/icons/github.svg"
-                alt="GitHub"
-                width={0}
-                height={0}
-                className="size-4"
-              />
-              Github
-            </a>
-            <a
+              icon="/assets/icons/github.svg"
+              label="Github"
+            />
+            <SocialLink
+              href="https://facebook.com/"
+              icon="/assets/icons/facebook.svg"
+              label="Facebook"
+            />
+            <SocialLink
               href="https://github.com/"
-              className="group flex items-center gap-2 rounded-full border px-5 py-2
-              transition-all duration-300
-            hover:bg-black hover:text-white hover:scale-[1.03] hover:shadow-md
-            dark:hover:bg-white dark:hover:text-black"
-            >
-              <Image
-                src="/assets/icons/facebook.svg"
-                alt="facebook"
-                width={0}
-                height={0}
-                className="size-4"
-              />
-              Facebook
-            </a>
-            <a
-              href="https://github.com/"
-              className="group flex items-center gap-2 rounded-full border px-5 py-2
-              transition-all duration-300
-            hover:bg-black hover:text-white hover:scale-[1.03] hover:shadow-md
-            dark:hover:bg-white dark:hover:text-black"
-            >
-              <Image
-                src="/assets/icons/instagram.svg"
-                alt="instagram"
-                width={0}
-                height={0}
-                className="size-4"
-              />
-              Instagram
-            </a>
+              icon="/assets/icons/instagram.svg"
+              label="Instagram"
+            />
           </div>
         </div>
         <div>
