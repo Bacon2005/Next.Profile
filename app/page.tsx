@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {} from "next/font/google";
+import NavLink from "@/components/navLinks";
 
 export default function Home() {
   return (
@@ -6,7 +8,7 @@ export default function Home() {
       {/* Navigation Bar */}
       <div className="flex flex-row items-center justify-between w-full mt-5 px-8 py-0">
         <div>
-          <h1 className="text-2xl">
+          <h1 className="text-1xl">
             Tyrone
             <br /> Niere
           </h1>
@@ -14,9 +16,9 @@ export default function Home() {
         <div>
           {/* Add areas to navigate to */}
           <ul className="flex flex-row gap-20 text-lg">
-            <li className="font-bold">About</li>
-            <li className="font-bold">Projects</li>
-            <li className="font-bold hover:cursor-pointer">Contact</li>
+            <NavLink href="">About</NavLink>
+            <NavLink href="">Projects</NavLink>
+            <NavLink href="">Contact</NavLink>
           </ul>
         </div>
         <div className="profile">
