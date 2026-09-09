@@ -74,7 +74,7 @@ export default function Home() {
       <div className="flex flex-row items-center justify-center gap-80 bg-coffee_bean px-8 py-12 w-12/12">
         <div>
           <h1
-            className={`text-white font-extrabold text-5xl ${alfa_Slab_One.className}`}
+            className={`text-white font-extrabold text-7xl ${alfa_Slab_One.className}`}
           >
             About Me
           </h1>
@@ -121,7 +121,7 @@ export default function Home() {
               <span className="text-gray-200 pl-4.5">
                 focus:{" "}
                 <span className="text-yellow-300">
-                  {[`"Web",  "APIs", "UI/UX"`]}
+                  {`["Web",  "APIs", "UI/UX"]`}
                 </span>
                 ,
               </span>
