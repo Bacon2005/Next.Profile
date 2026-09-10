@@ -39,7 +39,7 @@ export default function Home() {
               label="Facebook"
             />
             <SocialLink
-              href="https://github.com/"
+              href="https://instagram.com/"
               icon="/assets/icons/instagram.svg"
               label="Instagram"
             />
@@ -72,7 +72,7 @@ export default function Home() {
       </div>
       {/* Short About Me */}
       <div className="flex flex-row items-center justify-center gap-80 bg-coffee_bean px-8 py-12 w-12/12">
-        <div>
+        <div className="border-l-2 border-l-orange-300 p-10">
           <h1
             className={`text-white font-extrabold text-7xl ${alfa_Slab_One.className}`}
           >
@@ -83,6 +83,10 @@ export default function Home() {
             while building meaningful digital experiences. I enjoy working
             across the stack, from crafting intuitive interfaces to developing
             reliable backend systems.
+          </p>
+          <p className="text-white mt-6 max-w-md">
+            I care about performance, accessibility, and crafting seamless user
+            experiences.
           </p>
         </div>
 
@@ -150,6 +154,12 @@ export default function Home() {
                 7
               </span>
               <span className="text-gray-200">{"};"}</span>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="w-6 shrink-0 text-left text-gray-600 select-none border-r-2 border-gray-600 pr-2">
+                8
+              </span>
             </div>
           </div>
         </div>

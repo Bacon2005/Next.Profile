@@ -22,7 +22,7 @@ export default function NavBar() {
       </div>
       <div className="profile">
         <Image
-          src="/assets/Ty_White.png"
+          src="/assets/photos/Ty_White.png"
           alt="Ty Logo"
           width={50}
           height={50}

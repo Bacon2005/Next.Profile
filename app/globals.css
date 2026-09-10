@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f1f1f1;
+  --background: #f6f3e9;
   --foreground: #171717;
   /* Text Colors */
   --text-white: #f1f1f1;
@@ -12,6 +12,7 @@
   --coffee_bean: #22181c;
   --black_cherry: #5a0001;
   --cinnabar: #f13030;
+  --cream: #f6f3e9;
 }
 
 @theme inline {
@@ -27,13 +28,23 @@
   --color-coffee_bean: var(--coffee_bean);
   --color-black_cherry: var(--black_cherry);
   --color-cinnabar: var(--cinnabar);
+  --color-cream: var(--cream);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background: #171717;
     --foreground: #ededed;
   }
+} */
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge (Chromium) */
 }
 
 body {

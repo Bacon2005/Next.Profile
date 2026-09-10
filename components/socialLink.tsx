@@ -13,12 +13,11 @@ export default function SocialLink({
   return (
     <a
       href={href}
-      className="group flex items-center gap-2 rounded-full border px-5 py-2
-                transition-all duration-300
-                 hover:bg-black hover:text-white hover:scale-[1.03] hover:shadow-md
-                 dark:hover:bg-white dark:hover:text-black"
+      className="flex items-center gap-2 rounded-full bg-background border border-black px-5 py-2 font-bold
+                transition-all duration-300 ease-in-out
+              hover:bg-orange-300 hover:text-cream hover:scale-[1.05] hover:border-orange-300 hover:shadow-md active:scale-[1.02]"
     >
-      <Image src={icon} alt={label} width={0} height={0} className="size-4" />
+      <Image src={icon} alt={label} width={0} height={0} className="size-5" />
       {label}
     </a>
   );
