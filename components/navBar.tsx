@@ -4,7 +4,7 @@ import NavLink from "@/components/navLinks";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-col items-center gap-8 bg-surface rounded-3xl px-4 py-6 w-24">
+    <div className="sticky top-6 flex flex-col items-center gap-8 bg-surface rounded-3xl px-4 py-6 w-24">
       {/* Profile picture */}
       <div className="rounded-full overflow-hidden ring-2 ring-outline">
         <Image
@@ -26,10 +26,10 @@ export default function NavBar() {
         <NavLink href="#about">
           <div className="w-10 h-10 rounded-xl bg-surface-2" />
         </NavLink>
-        <NavLink href="/projects">
+        <NavLink href="">
           <div className="w-10 h-10 rounded-xl bg-surface-2" />
         </NavLink>
-        <NavLink href="/contact">
+        <NavLink href="">
           <div className="w-10 h-10 rounded-xl bg-surface-2" />
         </NavLink>
       </ul>
