@@ -1,24 +1,39 @@
 "use client";
-import Image from "next/image";
+
+import * as motion from "motion/react-client";
+import { Nunito_Sans } from "next/font/google";
+const nunito_sans = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function SocialLink({
   href,
-  icon,
   label,
+  icon,
+  color,
 }: {
   href: string;
-  icon: string;
   label: string;
+  icon: React.ReactNode;
+  color: string;
 }) {
   return (
-    <a
-      href={href}
-      className="flex items-center gap-2 rounded-full bg-background border border-black px-5 py-2 font-bold
-                transition-all duration-300 ease-in-out
-              hover:bg-orange-300 hover:text-cream hover:scale-[1.05] hover:border-orange-300 hover:shadow-md active:scale-[1.02]"
+    <motion.div
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.8 }}
+      style={{ ...box, backgroundColor: color }}
     >
-      <Image src={icon} alt={label} width={0} height={0} className="size-5" />
-      {label}
-    </a>
+      <a href={href} className="flex flex-row gap-3 items-center p-2">
+        <span className={`${nunito_sans.className} tracking-wide pl-2`}>
+          {label}
+        </span>
+        <span className="pr-2">{icon}</span>
+      </a>
+    </motion.div>
   );
 }
+
+const box = {
+  borderRadius: "50px",
+};

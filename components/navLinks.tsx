@@ -24,7 +24,7 @@ export default function NavLink({
   // used to keep the underline visible on the active page.
 
   return (
-    <li className="relative font-bold w-fit">
+    <li className="relative font-bold w-fit list-none">
       <Link
         href={href}
         className={`relative

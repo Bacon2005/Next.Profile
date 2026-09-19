@@ -1,5 +1,6 @@
 //Components
-import SocialLink from "@/components/socialLink";
+"use client";
+import Main from "@/components/page/main";
 import Subtitle from "@/components/subtitle";
 import ToolShowcase from "@/components/toolShowcase";
 import { Alfa_Slab_One, Nunito_Sans } from "next/font/google";
@@ -18,18 +19,12 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-7">
+        {/* ======================= MAIN HERO ======================= */}
         <section id="main">
-          <div className="flex flex-row gap-8">
-            <div className="bg-surface rounded-3xl p-4">
-              <h1 className={nunito_sans.className}>Hello</h1>
-            </div>
-            <div className="bg-surface rounded-3xl p-4">
-              <h1 className={nunito_sans.className}>Tech Stack</h1>
-            </div>
-          </div>
+          <Main />
         </section>
         {/* ======================= ABOUT ME ======================= */}
-        <section id="about">
+        <section id="about" className="flex flex-col gap-8">
           <div className="bg-surface rounded-3xl p-10">
             <div id="title" className="flex flex-row items-center">
               <div className="w-3 h-3 rounded-full bg-cta" />
@@ -133,8 +128,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-        <section id="about-capabilites">
           <div className="bg-surface rounded-3xl p-10">
             <div id="title" className="flex flex-row items-center">
               <div className="w-3 h-3 rounded-full bg-cta" />
@@ -180,7 +173,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-10">
-                <div id="tools" className="min-w-0">
+                <div id="databases" className="min-w-0">
                   <Subtitle>Databases</Subtitle>
 
                   <ul className="flex flex-wrap gap-2.5">
@@ -190,7 +183,7 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div id="languages" className="min-w-0">
+                <div id="techStack" className="min-w-0">
                   <Subtitle>Frontend</Subtitle>
 
                   <ul className="flex flex-wrap gap-2.5">
