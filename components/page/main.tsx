@@ -16,8 +16,8 @@ const nunito_sans = Nunito_Sans({
 
 export default function Main() {
   return (
-    <div className="flex flex-row gap-8 justify-between">
-      <div className="bg-surface rounded-3xl p-10">
+    <div className="flex flex-row gap-8">
+      <div className="bg-surface rounded-3xl p-10 flex-1">
         <div className="border-outline border-b-2 pb-10">
           <div id="title" className="flex flex-row items-center">
             <div className="w-3 h-3 rounded-full bg-cta" />
@@ -58,14 +58,14 @@ export default function Main() {
           />
         </div>
       </div>
-      <div className="bg-surface rounded-3xl p-10 gap-3">
+      <div className="bg-surface rounded-3xl p-10 w-72 shrink-0">
         <div id="title" className="flex flex-row items-center">
           <div className="w-3 h-3 rounded-full bg-cta" />
           <p className={`${nunito_sans.className} pl-3 tracking-widest`}>
             Tech Stack
           </p>
         </div>
-        <ul className="">
+        <ul className="flex flex-col gap-3.5">
           <NavLink href={"#tools"}>Tools</NavLink>
           <NavLink href={"#languages"}>Languages</NavLink>
           <NavLink href={"#databases"}>Databases</NavLink>

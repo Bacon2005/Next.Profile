@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { Home, User, Gpu, Mail } from "lucide-react";
 import NavLink from "@/components/navLinks";
 
 export default function NavBar() {
@@ -19,18 +20,18 @@ export default function NavBar() {
       <hr className="w-8 border-outline" />
 
       {/* Nav items — using your existing NavLink, just placeholder squares as children for now */}
-      <ul className="flex flex-col gap-6">
+      <ul className="flex flex-col gap-10 items-center">
         <NavLink href="#main">
-          <div className="w-10 h-10 rounded-xl bg-surface-2" />
+          <Home size={30} />
         </NavLink>
         <NavLink href="#about">
-          <div className="w-10 h-10 rounded-xl bg-surface-2" />
+          <User size={30} />
         </NavLink>
         <NavLink href="">
-          <div className="w-10 h-10 rounded-xl bg-surface-2" />
+          <Gpu size={30} />
         </NavLink>
         <NavLink href="">
-          <div className="w-10 h-10 rounded-xl bg-surface-2" />
+          <Mail size={30} />
         </NavLink>
       </ul>
 
