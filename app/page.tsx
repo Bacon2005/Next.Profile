@@ -3,6 +3,7 @@
 import Main from "@/components/page/main";
 import Subtitle from "@/components/subtitle";
 import ToolShowcase from "@/components/toolShowcase";
+import ProjectCard from "@/components/projectCard";
 import { Alfa_Slab_One, Nunito_Sans } from "next/font/google";
 
 const alfa_Slab_One = Alfa_Slab_One({
@@ -18,7 +19,7 @@ const nunito_sans = Nunito_Sans({
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-8">
         {/* ======================= MAIN HERO ======================= */}
         <section id="main">
           <Main />
@@ -215,6 +216,47 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* ======================= PROJECTS ======================= */}
+        <section id="projects" className="flex flex-col gap-8">
+          <div className="bg-surface rounded-3xl p-10">
+            <div id="title" className="flex flex-row items-center">
+              <div className="w-3 h-3 rounded-full bg-cta" />
+              <p className={`${nunito_sans.className} pl-3 tracking-widest`}>
+                Projects
+              </p>
+            </div>
+            <h1
+              className={`${alfa_Slab_One.className} text-8xl mt-6 whitespace-nowrap`}
+            >
+              Projects
+            </h1>
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-15">
+              <ProjectCard
+                image={"Sebs.jpg"}
+                href={
+                  "https://github.com/well-bluu/AdvaWeb-FinalProject-SEBS.git"
+                }
+                name={"SEBS"}
+                date={"July-August 2026"}
+                description={""}
+              />
+              <ProjectCard
+                image={"PicTa.jpg"}
+                href={"https://github.com/Bacon2005/picta.git"}
+                name={"PicTa"}
+                date={"July-August 2026"}
+                description={""}
+              />
+              <ProjectCard
+                image={"profile.jpg"}
+                href={""}
+                name={""}
+                date={""}
+                description={""}
+              />
             </div>
           </div>
         </section>
