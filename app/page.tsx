@@ -129,8 +129,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-surface rounded-3xl p-10">
-            <div id="title" className="flex flex-row items-center">
+          <div id="aboutCapabilites" className="bg-surface rounded-3xl p-10">
+            <div className="flex flex-row items-center">
               <div className="w-3 h-3 rounded-full bg-cta" />
               <p className={`${nunito_sans.className} pl-3 tracking-widest`}>
                 About - Capabilites
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
             <div id="skills-and-tools">
               <div className="grid grid-cols-2 gap-10">
-                <div id="tools" className="min-w-0">
+                <div id="languages" className="min-w-0">
                   <Subtitle>Tools</Subtitle>
 
                   <ul className="flex flex-wrap gap-2.5">

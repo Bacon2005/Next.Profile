@@ -27,7 +27,7 @@ export default function NavBar() {
         <NavLink href="#about">
           <User size={30} />
         </NavLink>
-        <NavLink href="">
+        <NavLink href="#projects">
           <Gpu size={30} />
         </NavLink>
         <NavLink href="">

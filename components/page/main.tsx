@@ -4,6 +4,9 @@ import { ArrowRight, Download } from "lucide-react";
 import SocialLink from "@/components/socialLink";
 import NavLink from "@/components/navLinks";
 
+import { useState } from "react";
+import * as motion from "motion/react-client";
+
 const alfa_Slab_One = Alfa_Slab_One({
   subsets: ["latin"],
   weight: ["400"],
@@ -58,18 +61,41 @@ export default function Main() {
           />
         </div>
       </div>
-      <div className="bg-surface rounded-3xl p-10 w-72 shrink-0">
-        <div id="title" className="flex flex-row items-center">
+      <div className="bg-surface rounded-3xl p-10 w-72 shrink-0 flex flex-col justify-evenly">
+        <div id="title" className="flex flex-row items-center mb-3.5">
           <div className="w-3 h-3 rounded-full bg-cta" />
           <p className={`${nunito_sans.className} pl-3 tracking-widest`}>
             Tech Stack
           </p>
         </div>
         <ul className="flex flex-col gap-3.5">
-          <NavLink href={"#tools"}>Tools</NavLink>
-          <NavLink href={"#languages"}>Languages</NavLink>
-          <NavLink href={"#databases"}>Databases</NavLink>
-          <NavLink href={"#techStack"}>Tech Stack</NavLink>
+          <a
+            className="w-full rounded-xl bg-surface-2 p-3.5 pl-2.5 font-bold transition-colors duration-300 ease-in-out hover:bg-cta-hover"
+            href={"#aboutCapabilites"}
+          >
+            Tools
+          </a>
+
+          <a
+            className="w-full rounded-xl bg-surface-2 p-3.5 pl-2.5 font-bold transition-colors duration-300 ease-in-out hover:bg-cta-hover"
+            href={"#aboutCapabilites"}
+          >
+            Languages
+          </a>
+
+          <a
+            className="w-full rounded-xl bg-surface-2 p-3.5 pl-2.5 font-bold transition-colors duration-300 ease-in-out hover:bg-cta-hover"
+            href={"#aboutCapabilites"}
+          >
+            Databases
+          </a>
+
+          <a
+            className="w-full rounded-xl bg-surface-2 p-3.5 pl-2.5 font-bold transition-colors duration-300 ease-in-out hover:bg-cta-hover"
+            href={"#aboutCapabilites"}
+          >
+            Tech Stack
+          </a>
         </ul>
       </div>
     </div>
